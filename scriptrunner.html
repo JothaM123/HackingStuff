@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScriptRunner</title>
+  <style>
+    *{
+      background: #000;
+    }
+    h1{
+      color:black;
+      font-size: 105px;
+      text-shadow:7px 7px 25px rgb(0, 100, 255), -7px -7px 25px rgb(255, 127, 223);
+      font-family: "Segoe UI Emoji";
+    }
+  </style>
+</head>
+<body>
+  <!--Use the ?code param to enter code. Use ; to have more than one line of code.-->
+  <script>
+    var stringurl = window.location.href
+    var url = new URL(stringurl)
+    var code = url.searchParams.get("code")
+    var flag = "flag{hacked!!!}"
+    eval(code)
+  </script>
+  <br><br><br><br><br><br><br><br><br><br>
+  <center>
+    <h1>☠Hacked!!!☠</h1>
+  </center>
+</body>
+</html>
